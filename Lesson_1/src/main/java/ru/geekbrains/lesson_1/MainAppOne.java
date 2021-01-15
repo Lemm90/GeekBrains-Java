@@ -66,17 +66,17 @@ public class MainAppOne {
     // п.8 *Написать метод, который определяет, является ли год високосным, и выводит сообщение в консоль.
     // Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный.
     public static void intercalaryYear (int year){
-        int firstCond = year % 4;
-        int twoCond = year % 100;
-        int threeCond = year % 400;
+        int divideByFour = year % 4;
+        int divideByHundred = year % 100;
+        int divideByFourHundred = year % 400;
         String thrueYear = "Високосный год!";
         String falseYear = "Не високосный год!";
         String error = "Упс! Введите корректное число.";
-        if (year > 0 && year < 100 && firstCond == 0) {
+        if (year > 0 && year < 100 && divideByFour == 0) {
             System.out.println(thrueYear);
-        } else if (year >= 100 && firstCond == 0 && twoCond != 0){
+        } else if (year >= 100 && divideByFour == 0 && divideByHundred != 0){
             System.out.println(thrueYear);
-        } else if (year >= 400 && threeCond == 0){
+        } else if (year >= 400 && divideByFourHundred == 0){
             System.out.println(thrueYear);
         } else if (year <= 0){
             System.out.println(error);
