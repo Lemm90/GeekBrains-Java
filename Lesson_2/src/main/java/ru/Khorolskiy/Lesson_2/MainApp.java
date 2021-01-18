@@ -10,12 +10,11 @@ public class MainApp {
         System.out.println();
         increaseInTheNumbers();
         System.out.println();
-        square();
+        xInSquared();
         System.out.println();
         minMax();
     }
-
-    //адать целочисленный массив, состоящий из элементов 0 и 1.
+    //п.1 Задать целочисленный массив, состоящий из элементов 0 и 1.
 // Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ]. С помощью цикла и условия заменить 0 на 1, 1 на 0;
     public static void changingAnArray() {
         int[] initialArray = {1, 1, 0, 0, 1, 0};
@@ -56,19 +55,13 @@ public class MainApp {
     // п.4 Создать квадратный двумерный целочисленный массив (количество строк и столбцов одинаковое),
 // и с помощью цикла(-ов) заполнить его диагональные элементы единицами
 // (можно только одну из диагоналей, если обе сложно).
-    public static void square() {
+    public static void  xInSquared() {
         int[][] arr2d = new int[5][5];
-        arr2d[0][0] = 1;
-        arr2d[1][1] = 1;
-        arr2d[2][2] = 1;
-        arr2d[3][3] = 1;
-        arr2d[4][4] = 1;
-        arr2d[0][4] = 1;
-        arr2d[1][3] = 1;
-        arr2d[3][1] = 1;
-        arr2d[4][0] = 1;
-        for (int i = 0; i < arr2d.length; i++) {
-            for (int j = 0; j < arr2d.length; j++) {
+            for (int i = 0; i < arr2d.length; i++) {
+                for (int j = 0; j < arr2d.length; j++) {
+                    if ( i == j || i + j == 4) {
+                    arr2d[i] [j] = 1;
+                }
                 System.out.print(arr2d[i][j] + " ");
             }
             System.out.println();
@@ -76,7 +69,7 @@ public class MainApp {
 
     }
 
-    // ** Задать одномерный массив и найти в нем минимальный и максимальный элементы (без помощи интернета);
+    // п.5 ** Задать одномерный массив и найти в нем минимальный и максимальный элементы (без помощи интернета);
     public static void minMax() {
         int[] arr = {8, 7, 15, 3, 65, 23, 7, 2, 67, 34};
         int max = arr[0];
