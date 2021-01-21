@@ -1,6 +1,6 @@
 package ru.Khorolkiy.Lesson_3;
 
-import java.util.Arrays;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -17,8 +17,8 @@ public class MainApp {
             "pea", "peanut", "pear", "pepper", "pineapple", "pumpkin", "potato"};
 
     public static void main(String[] args) {
-        //guessTheNumber();
-        //guessTheNumberVersion2();
+        guessTheNumber();
+        guessTheNumberVersion2();
         guessTheWord();
     }
 
@@ -39,7 +39,7 @@ public class MainApp {
             }
         }
         System.out.println("Повторить игру?");
-        System.out.println("1. ДА");
+        System.out.println("1. Да");
         System.out.println("2. Нет");
         int solutionInput = scanner.nextInt();
         while (solutionInput == 1) {
@@ -92,19 +92,28 @@ public class MainApp {
             break;
         }
     }
-
+    /// Не смог до конца сделать задачу.
     public static void guessTheWord() {
 
         System.out.println("Здравствуйте! Это игра 'Угадай слово'. Ваша задача угадать фрукт который я загадал:");
-            int randomWord = rand.nextInt(words.length);
+        int randomWord = rand.nextInt(words.length);
+        int randomChar = rand.nextInt(words[randomWord].length());
         for (int i = 0; i < words[randomWord].length(); i++) {
-            System.out.print(words[randomWord].charAt(i));
-
+            /// Замена букв на "Х"
                     }
-
-
+        System.out.println("Введите слово:");
+        String inputWord = scanner.next();
         }
-    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
