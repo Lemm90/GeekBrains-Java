@@ -59,7 +59,7 @@ public class MainApp {
         int[][] arr2d = new int[5][5];
             for (int i = 0; i < arr2d.length; i++) {
                 for (int j = 0; j < arr2d.length; j++) {
-                    if ( i == j || i + j == 4) {
+                    if ( i == j || i + j == arr2d.length - 1) {
                     arr2d[i] [j] = 1;
                 }
                 System.out.print(arr2d[i][j] + " ");
