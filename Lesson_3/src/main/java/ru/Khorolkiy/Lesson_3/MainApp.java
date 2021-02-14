@@ -20,6 +20,7 @@ public class MainApp {
         guessTheNumber();
         guessTheNumberVersion2();
         guessTheWord();
+
     }
 
     public static void guessTheNumber() {
@@ -104,6 +105,7 @@ public class MainApp {
         System.out.println("Введите слово:");
         String inputWord = scanner.next();
         }
+
 }
 
 

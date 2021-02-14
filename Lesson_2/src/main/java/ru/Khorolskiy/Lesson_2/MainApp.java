@@ -84,6 +84,7 @@ public class MainApp {
         System.out.println("Max: " + max);
         System.out.println("Min: " + min);
     }
+
 }
 
 
